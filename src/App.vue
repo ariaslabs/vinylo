@@ -1,7 +1,5 @@
 <template>
   <v-app>
-    <SystemBar />
-
     <v-main>
       <router-view/>
     </v-main>
@@ -9,21 +7,12 @@
 </template>
 
 <script>
-import SystemBar from './components/SystemBar.vue'
 
 export default {
   name: 'App',
-  components: {
-    SystemBar
-  },
+
   data: () => ({
     //
   }),
 };
 </script>
-
-<style>
-  body::-webkit-scrollbar {
-    display: none; /* for Chrome, Safari, and Opera */
-  }
-</style>

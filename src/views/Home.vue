@@ -1,15 +1,38 @@
 <template>
-  <hello-world />
+  <v-container fluid>
+    <v-row>
+      <v-col>
+        <TableView />
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
-  import HelloWorld from '../components/HelloWorld'
+import TableView from '../components/TableVIew.vue';
 
-  export default {
-    name: 'Home',
+export default {
+  name: 'Home',
+  data: () => ({
+    records: [
+      {
+        _id: '12481hi2h410',
+        albuim: 'Wellness',
+        artist: 'Last Dinosaurs',
 
-    components: {
-      HelloWorld,
+      },
+    ],
+  }),
+  components: {
+    TableView,
+  },
+  methods: {
+    addRecord() {
+
     },
-  }
+    getRecords() {
+
+    },
+  },
+};
 </script>
